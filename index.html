@@ -1,0 +1,500 @@
+<head>
+  <link rel="icon" type="image/png" href="img/ICON.png">
+  <title>Relógios McFly</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="carrossel.css" />
+  <link rel="stylesheet" href="card.css" />
+  <link rel="stylesheet" href="find.css" />
+  <link rel="stylesheet" href="review.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header>
+
+
+    <div class="logo">
+      <img src="img/logoaaa.png" alt="Logo do Site" />
+    </div>
+    </div>
+    <div class="container pesquisa">
+      <div class="top-row">
+        <div class="links">
+          <a href="#">Login</a>
+          |
+          <a href="#">Registro</a>
+          |
+          <a href="#">Minha conta</a>
+          |
+          <a href="#">Rastrear pedido</a>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <form class="search">
+          <select class="category-selector">
+            <label for="category-selector" class="form-label">Categoria</label>
+            <option selected>Filtrar por categoria</option>
+          </select>
+          <input class="search-input" type="text" placeholder="O que você está procurando?" />
+          <button type="submit">
+            <i class="fa fa-search" style="font-size: 12px"></i>
+          </button>
+        </form>
+        <div class="cart">
+          <span></span>
+          <i class="fa fa-shopping-cart" style="font-size: 16px"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="w-100" style="display: flex; margin-top: 120px">
+    <div class="find w-100">
+      <form>
+        <label for="type">Tipo:</label>
+        <select name="type" id="type">
+          <option value="">Selecione</option>
+        </select>
+
+        <label for="brand">Marca:</label>
+        <select name="brand" id="brand">
+          <option value="">Preço</option>
+        </select>
+
+        <label for="category">Preço:</label>
+        <select name="category" id="category">
+          <option value="">Selecione</option>
+        </select>
+      </form>
+    </div>
+    <div class="carousel">
+      <img src="img/relogio01.jpg" alt="Imagem 1" class="carousel-image active" />
+      <img src="img/relogio02.jpg" alt="Imagem 2" class="carousel-image" />
+      <img src="img/relogio03.jpg" alt="Imagem 3" class="carousel-image" />
+
+      <div class="carousel-navigation">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      <div class="carousel-indicators">
+        <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex" class="lista-card-parent">
+    <div class="lista-card">
+      <div class="item-card">
+        <img src="" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (59)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$160,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img/teste.png" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (45)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$ 220,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/hitsqueen.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (14)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$ 115,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/vanhalenII.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (85)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$150,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/thedarksideofthemoonpinkfloyd.jpg" class="item-card-image" alt="Descrição da imagem" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (47)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$150,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/ledzeppelin IV.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (67)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$140,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/hotelcaliforniaeagles.jpg" class="item-card-image" alt="Descrição da imagem" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (87)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$110,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/thrillermichaeljackson.jpg" class="item-card-image" alt="Descrição da imagem" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (14)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$150,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/helpbeatles.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (57)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$80,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/aerosmith.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (78)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$90,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (59)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$160,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img/teste.png" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (45)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$ 220,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/hitsqueen.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (14)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$ 115,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/vanhalenII.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (85)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$150,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/thedarksideofthemoonpinkfloyd.jpg" class="item-card-image" alt="Descrição da imagem" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (47)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$150,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/ledzeppelin IV.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (67)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$140,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/hotelcaliforniaeagles.jpg" class="item-card-image" alt="Descrição da imagem" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (87)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$110,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/thrillermichaeljackson.jpg" class="item-card-image" alt="Descrição da imagem" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (14)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$150,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/helpbeatles.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (57)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$80,00</span>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="img novas/aerosmith.jpg" alt="Descrição da imagem" class="item-card-image" />
+        <p class="card-title">LP Pink Floyd The Wall</p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          (78)
+        </div>
+
+        <div class="price" style="justify-content: center">
+          <span class="current-price">R$90,00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <h2>Relógios mais vendidos</h2>
+      <ul class="review-cards">
+        <li class="review-item">
+          <img src="img novas/blusapinkfloyd.jpg" alt="Monitor Gamer Lg" class="review-item-img" />
+          <div class="product-info">
+            <h3 class="review-product-title">Blusa Pink Floyd</h3>
+            <div class="rating">★★★★★</div>
+            <div class="price">R$ 299,99</div>
+          </div>
+        </li>
+        <hr />
+        <li class="review-item">
+          <img src="img novas/blusanirvana.jpg" alt="Monitor Gamer Lg" class="review-item-img" />
+          <div class="product-info">
+            <h3 class="review-product-title">Blusa Nirvana</h3>
+            <div class="rating">★★★★★</div>
+            <div class="price">R$ 59,99</div>
+          </div>
+        </li>
+        <hr />
+        <li class="review-item">
+          <img src="img novas/blusapinkfloydthedark.jpg" class="review-item-img" alt="Monitor Gamer Lg" />
+          <div class="product-info">
+            <h3 class="review-product-title">Blusa Pink Floyd</h3>
+            <div class="rating">★★★★★</div>
+            <div class="price">R$ 399,99</div>
+          </div>
+        </li>
+        <hr />
+      </ul>
+    </div>
+  </div>
+  <div class="newsletter-panel">
+    <h3>Registre seu e-mail e receba novidades:</h3>
+    <form>
+      <input type="email" name="email" placeholder="Digite seu e-mail" />
+      <button type="submit">Confirma</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-4" style="margin-left: 15px">
+          <h4>Métodos de Pagamento</h4>
+          <ul>
+            <li>Cartão de Crédito</li>
+            <li>Paypal</li>
+            <li>PagSeguro</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>Central de Atendimento</h4>
+          <ul>
+            <li>Endereço: Rua Hill Valley center, nº 007</li>
+            <li>Telefone: (33) 99708-7392</li>
+            <li>E-mail: roelogio.faleconosco@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">&copy; 2007-2014 company.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="info">
+    <ul>
+      <li>Nome: Benedito Medeiros Salomão | Curso: Sistemas de informação | Nº de matrícula: 816123</li>
+    </ul>
+  </div>
+  <script src="carrossel.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>

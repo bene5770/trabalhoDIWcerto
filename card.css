@@ -1,0 +1,61 @@
+/*detalhes*/
+.lista-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-card {
+  width: 170px;
+  border: 3px solid #FBD500;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 5px;
+}
+
+.item-card img {
+  height: 150px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 10px;
+  display: inline-flex;
+  font-size: 11px;
+  align-items: center;
+}
+
+.star {
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*caixa de desconto*/
+.discount {
+  background-color: #fa4242;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.original-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}

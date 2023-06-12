@@ -1,0 +1,32 @@
+.review {
+    width: 170px;
+    background-color: #f8f8f8;;
+    padding: 10px;
+}
+
+.review h2 {
+    font-size: 1.2em;
+}
+
+.review ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.review li hr {
+    border: none;
+    border-top: 1px solid black;
+}

@@ -1,0 +1,51 @@
+/*caixa de procura*/
+.find {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 220px;
+}
+
+.find h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.find p {
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.find form {
+    display: flex;
+    flex-direction: column;
+}
+
+.find label {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.find select {
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.find button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.find button:hover {
+    background-color: #3e8e41;
+}
